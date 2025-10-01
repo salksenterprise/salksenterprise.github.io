@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SALKS Enterprise</title>
+  <meta name="description" content="Seasoned IT leader with 20+ years delivering enterprise solutions in financial services &amp; telecom. Salesforce CPQ, CRM, and Service Cloud. Contact us." />
+  <meta name="author" content="SALKS Enterprise" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SALKS Enterprise" />
+  <meta property="og:description" content="Seasoned IT leader with 20+ years delivering enterprise solutions in financial services &amp; telecom. Salesforce CPQ, CRM, and Service Cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://salksenterprise.github.io/" />
+  <meta property="og:image" content="https://salksenterprise.github.io/og-image.png" />
+
+  <!-- Simple, modern, responsive CSS (no frameworks) -->
+  <style>
+    :root{
+      --bg: #0b0d0f;           /* dark background */
+      --card:#12161a;          /* card background */
+      --text:#e6edf3;          /* primary text */
+      --muted:#9fb0c0;         /* secondary text */
+      --accent:#7aa2f7;        /* accent */
+      --accent-2:#22d3ee;      /* accent alt */
+      --ring:rgba(122,162,247,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --maxw: 1080px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: linear-gradient(180deg, #0b0d0f 0%, #0e1116 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{color:var(--accent-2)}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{
+      position:sticky; top:0; z-index:10; backdrop-filter:saturate(160%) blur(8px);
+      background:rgba(11,13,15,.6); border-bottom:1px solid rgba(255,255,255,.06)
+    }
+    nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:40px;height:40px;border-radius:12px;background: radial-gradient(circle at 30% 30%, var(--accent-2), var(--accent)); box-shadow:0 6px 18px var(--ring)}
+    .brand h1{font-size:18px;margin:0}
+    .menu a{margin:0 10px; font-weight:600}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,#171b21,#11161c);color:var(--text);box-shadow:var(--shadow)}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(180deg, #1a2333, #121a26); border-color:rgba(122,162,247,.35)}
+
+    .hero{padding:72px 24px 36px}
+    .grid{display:grid; gap:18px}
+    @media (min-width: 880px){
+      .grid-2{grid-template-columns: 1.2fr 1fr}
+      .grid-3{grid-template-columns: repeat(3,1fr)}
+    }
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+    .pill{display:inline-flex;align-items:center;gap:8px; font-size:12px; color:var(--muted); background:rgba(122,162,247,.12); border:1px solid var(--ring); padding:6px 10px; border-radius:999px}
+    h2{margin:8px 0 8px; font-size:28px}
+    h3{margin:6px 0 8px; font-size:20px}
+    p{color:var(--muted); margin:8px 0}
+    ul{padding-left:18px}
+    section{padding:32px 24px}
+    .kpi{display:flex; gap:12px; align-items:center}
+    .kpi strong{font-size:26px}
+
+    .stack{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{padding:8px 12px; border-radius:999px; background:#0f141b; border:1px solid rgba(255,255,255,.06); color:var(--muted)}
+
+    footer{border-top:1px solid rgba(255,255,255,.06); padding:28px 24px; color:var(--muted)}
+    .muted{color:var(--muted)}
+
+    /* contact form */
+    form input, form textarea{
+      width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.12); background:#0d1218; color:var(--text)
+    }
+    form input:focus, form textarea:focus{outline:none; box-shadow:0 0 0 4px var(--ring); border-color:var(--accent)}
+    form label{font-size:14px; color:var(--muted)}
+
+    /* simple fade-in */
+    .fade{opacity:0; transform:translateY(8px); animation:fade 0.7s ease forwards}
+    .fade.d1{animation-delay:.1s}.fade.d2{animation-delay:.2s}.fade.d3{animation-delay:.3s}
+    @keyframes fade{to{opacity:1; transform:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <h1>SALKS Enterprise</h1>
+        </div>
+        <div class="menu">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn">Contact</a>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap grid grid-2">
+      <div class="card fade d1">
+        <span class="pill">Consulting • Available for new projects</span>
+        <h2 style="font-size:42px;line-height:1.2;margin-top:12px">We deliver <span style="color:var(--accent)">Salesforce CPQ, CRM, and Service Cloud</span> solutions—fast.</h2>
+        <p>Partner with us for architecture, implementation, and training. We blend hands‑on delivery with pragmatic mentorship so your team moves faster—sustainably.</p>
+        <div class="stack" style="margin-top:16px">
+          <span class="chip">Salesforce CPQ</span>
+          <span class="chip">Salesforce CRM</span>
+          <span class="chip">Service Cloud</span>
+          <span class="chip">Apex • LWC</span>
+          <span class="chip">Einstein / AI</span>
+          <span class="chip">Azure OpenAI</span>
+        </div>
+        <div style="margin-top:18px; display:flex; gap:10px"><a class="btn primary" href="mailto:SMBSalksEnterpriseLLC@comcast.net">Email us</a><a class="btn" href="#work">See case studies</a></div>
+      </div>
+      <div class="grid" style="gap:18px">
+        <div class="card kpi fade d2"><strong>50% faster</strong><span class="muted">avg. time‑to‑resolution after rollout</span></div>
+        <div class="card kpi fade d3"><strong>200k+</strong><span class="muted">end‑users served across projects</span></div>
+        <div class="card kpi fade d3"><strong>Flexible</strong><span class="muted">engagement model: remote • in-person • hybrid</span></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="wrap">
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Implementation & Architecture</h3>
+          <p>Design robust, scalable orgs: data model, security, flows, Apex, LWC, and integrations.</p>
+          <ul>
+            <li>Service Cloud setup & Omni‑Channel</li>
+            <li>Einstein Case Classification</li>
+            <li>CI/CD and best practices</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AI‑Assisted Knowledge</h3>
+          <p>Embed AI search and recommendations using Azure OpenAI or Einstein.</p>
+          <ul>
+            <li>Custom LWC knowledge panels</li>
+            <li>Named Credentials & callouts</li>
+            <li>Security reviews & logging</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Advisory & Enablement</h3>
+          <p>Short, high‑impact engagements to unblock teams and upskill developers.</p>
+          <ul>
+            <li>Architecture reviews</li>
+            <li>Team training & playbooks</li>
+            <li>Hiring & roadmap support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK / CASE STUDIES -->
+    <section id="work" class="wrap">
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Case Study: Faster Case Routing</h3>
+          <p class="muted">Implemented Omni‑Channel + Einstein Classification for a 50‑agent team; reduced triage time by 42%.</p>
+          <a class="btn" href="#contact">Ask for details</a>
+        </div>
+        <div class="card">
+          <h3>Case Study: AI Knowledge Panel</h3>
+          <p class="muted">Built an LWC using Azure search with article linking + solution notes. 28% fewer repeat contacts.</p>
+          <a class="btn" href="#contact">Ask for details</a>
+        </div>
+        <div class="card">
+          <h3>Case Study: Integration Revamp</h3>
+          <p class="muted">Refactored Apex callouts with Named Credentials and MDM alignment; cut incident volume by 35%.</p>
+          <a class="btn" href="#contact">Ask for details</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap grid grid-2">
+      <div class="card">
+        <h3>About Us</h3>
+        <p><strong>SALKS Enterprise</strong> — Seasoned IT leader with over 20 years of hands‑on industry experience in architecture, analysis, design, development, and troubleshooting of large‑scale, enterprise solutions across financial services and telecommunications.</p>
+        <p>Proven track record in analyzing situations and implementing solutions in fast‑paced, demanding environments, with metrics‑driven decision‑making for solution implementation and vendor selection.</p>
+        <h4 style="margin:10px 0 6px">Core competencies</h4>
+        <ul>
+          <li>Salesforce CPQ &amp; CRM modules</li>
+          <li>Application development &amp; oversight of multiple teams</li>
+          <li>Enterprise Architecture</li>
+          <li>Service Ownership &amp; Delivery</li>
+          <li>Business &amp; Technology Alignment</li>
+          <li>Troubleshooting &amp; Operational support</li>
+        </ul>
+        <div class="stack">
+          <span class="chip">New Jersey, USA</span>
+          <span class="chip">Remote / On‑site</span>
+          <span class="chip">B2B &amp; Enterprise</span>
+        </div>
+      </div>
+      
+    
+      
+    
+      <div class="card">
+        <h3>Why Choose Us</h3>
+        <ul>
+          <li><strong>Enterprise‑grade delivery</strong> — architecture‑first, with clear guardrails and documentation.</li>
+          <li><strong>Outcome‑focused</strong> — we target measurable KPIs like time‑to‑resolution, CSAT, and ticket deflection.</li>
+          <li><strong>Deep Salesforce expertise</strong> — CPQ, CRM, and Service Cloud with hands‑on Apex/LWC and Flow.</li>
+          <li><strong>Security & governance</strong> — least privilege, change control, auditability, and reviewable logs.</li>
+          <li><strong>Flexible engagement</strong> — remote, in‑person, or hybrid to fit your team and timeline.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap grid grid-2">
+      <div class="card">
+        <h3>Let’s talk</h3>
+        <p>For new projects, send a note. We usually reply within one business day.</p>
+        <div style="display:flex; gap:10px; margin-bottom:16px">
+          <a class="btn primary" href="mailto:SMBSalksEnterpriseLLC@comcast.net">SMBSalksEnterpriseLLC@comcast.net</a>
+          
+        </div>
+        
+        
+      </div>
+      <div class="card">
+        <h3>Typical Engagements</h3>
+        <ul>
+          <li>Discovery & solutioning: 1–2 weeks</li>
+          <li>Pilot implementation: 4–8 weeks</li>
+          <li>Enablement & handoff: 1–2 weeks</li>
+        </ul>
+        <p class="muted">Fixed‑price and retainer options available.</p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <span>© <span id="y"></span> SALKS Enterprise</span>
+      <span class="muted">Built with GitHub Pages • <a href="/" rel="nofollow">Source</a></span>
+    </div>
+  </footer>
+
+  <!-- tiny JS for current year -->
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+
+  <!-- Optional: JSON‑LD for SEO (fill in real data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SALKS Enterprise",
+    "url": "https://salksenterprise.github.io/",
+    "email": "SMBSalksEnterpriseLLC@comcast.net"
+  }
+  </script>
+</body>
+</html>
